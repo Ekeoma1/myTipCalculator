@@ -11,7 +11,7 @@ function percentCalc(no) {
 		let percentValue = percentRatio * billInputEl.value;
 		let amountToBeShared = percentValue / noOfPersonEl.value;
 
-		perPersonTipEl.textContent = amountToBeShared;
+		perPersonTipEl.textContent = amountToBeShared.toFixed(2);
 		totalEl.textContent = (Number(billInputEl.value) + Number(percentValue))
 	
 }
