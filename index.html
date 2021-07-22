@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="text-center mt-5 mb-5">
+    <img src="images/logo.svg" >
+  </div>
+
+  <div class="calculator-box mx-auto">
+
+    <div class="row">
+
+      <div class="col-md">
+
+        <div class="calculation-box">
+
+          <div>
+            <p>Bill</p>
+            <div class="bill-input-wrapper">
+              <img class="input-icon" src="images/icon-dollar.svg">
+              <input id="billInput" type="number" name="">
+            </div>
+          </div>
+
+          <div>
+            <p>Select Tip %</p>
+            <div class="percent-wrapper">
+              <button onclick="percentCalc(5)">5%</button>
+              <button onclick="percentCalc(10)">10%</button>
+              <button onclick="percentCalc(15)">15%</button>
+              <button onclick="percentCalc(25)">25%</button>
+              <button onclick="percentCalc(50)">50%</button>
+              <input onkeyup="custom()" id="customPercent" type="" placeholder="custom" name="">
+            </div>
+          </div>
+
+          <div>
+            <p>Number Of People</p>
+            <div class="tip-input-wrapper">
+              <img class="input-icon" src="images/icon-person.svg">
+              <input id="noOfPerson" type="number" min="0"  name="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md">
+        
+        <div class="total-box mt-3 mt-md-0">
+
+          <div>
+            <!-- the essence of the above div is for space between content when i give the the total-box div a property of justify content-->
+            <div class="tip-wrapper">
+              <p>Tip Amount <br/> <span class="person-span">/person</span></p>
+              <p>&#36;<span id="perPersonTip">0</span></p>
+            </div>
+
+            <div class="tip-wrapper">
+              <p>Total <br/> <span class="person-span">/person</span></p>
+              <p>&#36;<span id="total">0</span></p>
+            </div>
+          </div>
+
+          <button onclick="Reset()">Reset</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://ekeigwee.netlify.app" target="_blank">Eke Igwe Eke</a>.
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

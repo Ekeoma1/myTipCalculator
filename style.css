@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    background: hsl(185, 41%, 84%) !important;
+}
+
+*{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    font-weight: 700;
+}
+
+.calculator-box{
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.calculation-box{
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    box-sizing: border-box;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calculation-box  p{
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+}
+
+.total-box{
+    width: 100%;
+    background: hsl(183, 100%, 15%);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 300px;
+    display: grid;
+    align-content: space-between;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: hsl(189, 41%, 97%);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+}
+
+input:focus{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.bill-input-wrapper, .tip-input-wrapper{
+    position: relative;
+}
+
+.bill-input-wrapper input, .tip-input-wrapper input{
+    width: 100%;
+    font-size: 24px;
+}
+
+.input-icon{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+
+.percent-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 10px;
+}
+
+.percent-wrapper button{
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    background: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+}
+
+.percent-wrapper button:focus,.percent-wrapper button:hover{
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.tip-wrapper p:first-child{
+    color: white;
+    font-size: 12px;
+}
+
+.tip-wrapper p:nth-child(2){
+    justify-self: end;
+    font-size: 24px;
+    color: hsl(172, 67%, 45%);
+
+}
+
+.person-span {
+    color: hsl(186, 14%, 43%);
+    font-size: 10px;
+}
+
+.total-box button{
+    width: 100%;
+    padding: 7px 0;
+    border: none;
+    outline: none;
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.total-box button:hover, .total-box button:focus{
+    background:hsl(185, 41%, 84%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
